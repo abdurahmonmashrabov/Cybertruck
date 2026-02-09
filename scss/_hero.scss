@@ -5,7 +5,8 @@
 .hero {
     @include Displey($ITEMS: start, $JC: space-between, $GAP: 0px);
 }
-.hero-wrapper{
+
+.hero-wrapper {
     @include Displey($ITEMS: start, $JC: space-between, $GAP: 42px);
 }
 
@@ -23,6 +24,37 @@
     @include TextStyle($FW: 400, $FS: 20px, $LH: 30px, $CLR: $color-wht);
 }
 
-.hero-right-wrrapper>img{
+.hero-right-wrrapper>img {
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-titel {
+        @include TextStyle($FW: 600, $FS: 24px, $LH: 100%, $CLR: $color-wht);
+        padding-bottom: 12px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        @include TextStyle($FW: 400, $FS: 16px, $LH: 26px, $CLR: $color-wht);
+        padding-bottom: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-wrapper {
+        @include Displey($ITEMS: start, $JC: start, $GAP: 0px);
+        flex-direction: column;
+    }
+    .hero-left-wrapper{
+        padding: 0 20px;
+        width: 335px;
+    }
+    .hero-right-wrrapper>img{
+        width: 100%;
+        height: 190px;
+        padding: 0 20px;
+    }
 }

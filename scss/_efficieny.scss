@@ -1,20 +1,47 @@
-.site-efficiency{
+.site-efficiency {
     padding: 150px 0;
     background-image: url(../images/efficiency-bg.png);
     background-repeat: no-repeat;
     background-position: right center;
 }
 
-.efficiency-titel{
+.efficiency-titel {
     @include TextStyle($FW: 600, $FS: 28px, $LH: 100%, $CLR: $color-wht);
     padding-bottom: 16px;
 }
 
-.efficiency-text{
+.efficiency-text {
     @include TextStyle($FW: 400, $FS: 20px, $LH: 30px, $CLR: $color-wht);
     padding-bottom: 35px;
 }
 
-.efficiency-img-part> img{
+.efficiency-img-part>img {
     border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .efficiency-titel {
+        @include TextStyle($FW: 600, $FS: 24px, $LH: 100%, $CLR: $color-wht);
+        padding-bottom: 12px;
+    }
+
+    .efficiency-text-wrrapper {
+        padding: 0 20px;
+    }
+
+    .efficiency-text {
+        @include TextStyle($FW: 400, $FS: 16px, $LH: 26px, $CLR: $color-wht);
+        padding-bottom: 28px;
+    }
+
+    .efficiency-img-part>img {
+        width: 100%;
+        height: 190px;
+        padding: 0 20px;
+    }
+
+    .site-efficiency {
+        background-size: 200px 400px;
+    }
+
 }

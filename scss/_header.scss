@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+.header-content {
+    width: 889px;
+}
+
 .header-text {
     @include TextStyle($FW: 400, $FS: 24px, $LH: 100%, $CLR: $color-000);
     text-align: center;
@@ -26,8 +30,43 @@
     border: 2px solid $color-wht;
     cursor: pointer;
     transition: all 0.4s;
-    &:hover{
+
+    &:hover {
         background-color: rgb(23, 23, 105);
         border-color: rgb(23, 23, 105);
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        max-width: 100%;
+        height: 812px;
+        background-image: url(../images/header-mobil-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-img {
+        width: 200px;
+        height: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        @include TextStyle($FW: 400, $FS: 18px, $LH: 100%, $CLR: $color-000);
+    }
+
+    .header-content{
+        width: 301px;
+        margin: 0 auto;
+    }
+    .header-btn-wrapper{
+        padding: 0 20px;
+    }
+    .header-btn{
+        width: 100%;
     }
 }
