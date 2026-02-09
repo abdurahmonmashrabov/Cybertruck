@@ -1,0 +1,14 @@
+@mixin Displey($ITEMS, $JC, $GAP) {
+    display: flex;
+    align-items: $ITEMS;
+    justify-content: $JC;
+    gap: $GAP;
+
+}
+
+@mixin TextStyle($FW, $FS, $LH, $CLR) {
+    font-weight: $FW;
+    font-size: $FS;
+    line-height: $LH;
+    color: $CLR;
+}

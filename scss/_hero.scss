@@ -1,0 +1,28 @@
+.site-hero {
+    padding: 150px 0px;
+}
+
+.hero {
+    @include Displey($ITEMS: start, $JC: space-between, $GAP: 0px);
+}
+.hero-wrapper{
+    @include Displey($ITEMS: start, $JC: space-between, $GAP: 42px);
+}
+
+.hero-left-wrapper {
+    width: 528px;
+}
+
+.hero-titel {
+    @include TextStyle($FW: 600, $FS: 28px, $LH: 100%, $CLR: $color-wht);
+    padding-bottom: 16px;
+
+}
+
+.hero-text {
+    @include TextStyle($FW: 400, $FS: 20px, $LH: 30px, $CLR: $color-wht);
+}
+
+.hero-right-wrrapper>img{
+    border-radius: 10px;
+}

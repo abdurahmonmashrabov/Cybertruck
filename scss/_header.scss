@@ -1,0 +1,33 @@
+.site-header {
+    max-width: 100%;
+    height: 750px;
+    text-align: center;
+    padding: 50px 0 100px;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-text {
+    @include TextStyle($FW: 400, $FS: 24px, $LH: 100%, $CLR: $color-000);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 400px;
+}
+
+
+.header-btn {
+    @include TextStyle($FW: 500, $FS: 20px, $LH: 20px, $CLR: $color-wht);
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    min-width: 221px;
+    padding: 14px 62px;
+    border: 2px solid $color-wht;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover{
+        background-color: rgb(23, 23, 105);
+        border-color: rgb(23, 23, 105);
+    }
+}

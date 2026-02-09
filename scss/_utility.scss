@@ -1,0 +1,21 @@
+.site-utility{
+    padding-bottom: 150px;
+}
+
+.utility-titel{
+    @include TextStyle($FW: 600, $FS: 28px, $LH: 100%, $CLR: $color-wht);
+    padding-bottom: 16px;
+}
+
+.utility-text{
+    @include TextStyle($FW: 400, $FS: 20px, $LH: 30px, $CLR: $color-wht);
+    padding-bottom: 32px;
+}
+
+.utility-img-part>img, .utility-img> img{
+    border-radius: 20px;
+}
+
+.utility-img-part{
+    padding-bottom: 80px;
+}

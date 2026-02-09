@@ -1,0 +1,20 @@
+.site-efficiency{
+    padding: 150px 0;
+    background-image: url(../images/efficiency-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.efficiency-titel{
+    @include TextStyle($FW: 600, $FS: 28px, $LH: 100%, $CLR: $color-wht);
+    padding-bottom: 16px;
+}
+
+.efficiency-text{
+    @include TextStyle($FW: 400, $FS: 20px, $LH: 30px, $CLR: $color-wht);
+    padding-bottom: 35px;
+}
+
+.efficiency-img-part> img{
+    border-radius: 20px;
+}

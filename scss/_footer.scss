@@ -1,0 +1,33 @@
+.site-footer{
+    padding-bottom: 100px;
+}
+
+.footer{
+    @include Displey($ITEMS:center, $JC:space-between, $GAP:0px); 
+}
+
+.footer-wrapper{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-btn{
+    z-index: 2;
+    position: absolute;
+    right: -100px;
+    bottom: 80px;
+    width: 65px;
+    height: 65px;
+    border: 2px solid $color-wht;
+    border-top-left-radius: 15px;
+    background-color: transparent;
+
+    &:hover{
+        background-color: rgb(23, 23, 105);
+        border-color: rgb(23, 23, 105);
+    }
+
+}
